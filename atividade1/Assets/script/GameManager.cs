@@ -24,4 +24,9 @@ public class GameManager : MonoBehaviour
    {
       SceneManager.LoadScene(sceneName);
    }
+   public void LoadGameAndGUI()
+   {
+      SceneManager.LoadScene("Game");
+      SceneManager.LoadScene("GUI", LoadSceneMode.Additive);
+   }
 }
