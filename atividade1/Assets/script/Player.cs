@@ -22,15 +22,9 @@ public class Player : MonoBehaviour
             
         }
         float move = Input.GetAxis("Horizontal");
-        transform.Translate(Vector2.right * move * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector2.right * (move * moveSpeed * Time.deltaTime));
     } 
-   // public static class ButtonEventChannel
-    
-        //public static Action<string> OnButtonPressed;
-    
-        //public static void RaiseButtonPressed(string buttonID)
-        
-            //OnButtonPressed?.Invoke(buttonID);
+   
         
     
 }
